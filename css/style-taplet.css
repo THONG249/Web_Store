@@ -1,0 +1,42 @@
+@media  only screen and (min-width: 740px) and (max-width: 992px){
+    .header__main-menu{
+        width: 60%;
+        margin-top: 22px;  
+        background-color: #fefdfc;
+        margin-left: 5px;
+        display: none;
+    }
+    .header__main-menu-list{
+        margin: 10px 14px;
+    }
+    .header__logo-menu, .header__icon{
+        justify-content: center;
+    }
+    .btn__cart{
+        margin-right: 10px;
+    }
+    .btn__menu{
+        margin-left: 10px;
+        display: block;
+    }
+    .banner__main{
+        flex-direction: column-reverse;
+    }
+    .banner__main-img{
+        width: 90%;
+    }
+    .banner__main-text{
+        width: 90%;
+        margin-left: 40px;
+    }
+    .btn__search{
+        display: none;
+    }
+    .col-menu{
+        display: block;
+    }
+    .cart__product{
+        margin-bottom: 90px;
+    }
+}
+    

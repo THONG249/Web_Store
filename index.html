@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_mobile.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./css/style-taplet.css">
+    
+    <title>Document</title>
+</head>
+<body>
+  <div id="header__main">
+    <div class="container container__header">
+      <div class="row header__row">
+        <div class="col-2 col-sm-1 col-menu">
+          <button class="btn__menu" id ="myBtn">
+            <ion-icon name="menu-outline"></ion-icon>
+          </button>
+          <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+              <div class="modal-header">           
+                <ion-icon name="search-outline" class="iconic"></ion-icon>
+                <input type="text" class="input_text" placeholder="  Nhập thông tin...">
+                <span class="close">&times;</span>
+              </div>
+              <div class="modal-body">
+                <ul id="header__main-menu-mobile">
+                  <li class="nav-item active item__active">
+                    <a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active item__active">
+                    <a class="nav-link " href="#">Liên hệ</a>
+                  </li>
+                  <li class="nav-item active item__active">
+                    <a class="nav-link" href="#">Thương hiệu</a>
+                  </li>
+                  <li class="nav-item active item__active">
+                    <a class="nav-link" href="#">Tin tức & Sự kiện</a>
+                  </li>
+                  <li class="nav-item active item__active">
+                    <a class="nav-link" href="#">Bộ sưu tập</a>
+                  </li>
+                  <li class="nav-item dropdown item__active">
+                      <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Store
+                      </a>
+                      <ul class="nav-list-dropdown">
+                        <li class="nav-item active item__active">
+                          <a href="#" class="nav-link">Quần áo</a>
+                        </li>
+                        <li class="nav-item active item__active">
+                          <a href="#" class="nav-link">Dày dép</a>
+                        </li>
+                        <li class="nav-item active item__active">
+                          <a href="#" class="nav-link">Phụ kiện & Trang sức</a>
+                        </li>
+                        <li class="nav-item active item__active">
+                          <a href="#" class="nav-link">Balo & Túi sách</a>
+                        </li>
+                      </ul>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-9 col-7 header__logo-menu">
+          <a class="navbar-brand" href="#">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2021/03/logo-1.jpg" class="logo" alt="">
+          </a>
+        </div>
+        <div class="col-lg-9 col-sm-1 col-1" id="header__main-menu">
+          <div class="header__main-menu">
+            <ul class="header__main-menu-list">
+              <li class="nav-item active item__active">
+                <a class="nav-link" href="#">Giới thiệu <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active item__active">
+                <a class="nav-link " href="#">Liên hệ</a>
+              </li>
+              <li class="nav-item active item__active">
+                <a class="nav-link" href="#">Thương hiệu</a>
+              </li>
+              <li class="nav-item active item__active">
+                <a class="nav-link" href="#">Tin tức & Sự kiện</a>
+              </li>
+              <li class="nav-item active item__active">
+                <a class="nav-link" href="#">Bộ sưu tập</a>
+              </li>
+              <li class="nav-item dropdown item__active">
+                  <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Store
+                  </a>
+                  <ul class="nav-list-dropdown">
+                    <li class="nav-item active item__active">
+                      <a href="#" class="nav-link">Quần áo</a>
+                    </li>
+                    <li class="nav-item active item__active">
+                      <a href="#" class="nav-link">Dày dép</a>
+                    </li>
+                    <li class="nav-item active item__active">
+                      <a href="#" class="nav-link">Phụ kiện & Trang sức</a>
+                    </li>
+                    <li class="nav-item active item__active">
+                      <a href="#" class="nav-link">Balo & Túi sách</a>
+                    </li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-1 col-sm-1 col-2 header__icon">
+          <button class="btn__cart">
+            <ion-icon name="cart-outline"></ion-icon>
+          </button>
+          <button class="btn__search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="main">
+    <div class="container-fuild">
+      <div class="row">
+        <div class="banner__main">
+          <div class="banner__main-img">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/nguoi-mau-01.png" class="img__banner" alt="">
+          </div>
+          <div class="banner__main-text">
+            <h5>2021 new fashion </h5>
+            <h2>Sale off <br>upto 70%</h2> 
+           <p>Sự lựa chọn hàng đầu của các doanh nghiệp để giới thiệu các sản phẩm, thương hiệu liên quan đến đối tượng là phụ nữ.</p>
+            <a href="#" class="button__link button primary">
+              <span>MUA NGAY</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fuild about">
+      <div class="row about__row">
+        <div class="about__img mx-auto d-block">
+          <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/icon-pleats-kora-grey-02.png" id="about__img"alt=""> 
+        </div>
+        <div class="about__text">  
+          <h1 class="about__text-banner about__heading">2021 new fashation</h1>
+          <p class="about__text-banner">Sự lựa chọn hàng đầu của các doanh nghiệp để giới thiệu các sản phẩm, thương hiệu liên quan đến đối tượng là phụ nữ.</p>
+          <a href="#" class="about__link">
+            <span class="about__text-banner about__link-name">Về chúng tôi</span>
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container product">
+      <div class="row menu__product">
+      <div class="col-lg-12">
+        <h1 class="product__heading">Tất cả sản phẩm</h1>
+        <ul class="product__list">
+          <li class="product__item">
+            <a href="#" class="product__link">Tất cả</a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">Quần áo</a>
+          </li>
+          <li class="product__item">
+            <a href="#" class="product__link">Giày dép</a>
+          </li>
+        </ul>
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_ach/2021/11/29/1638176228099dd9b1f0ea2dce75991d30813d14ef.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_ach/2021/11/29/16381761567fb7b31fbf118a01b96031e92ba1f71b.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_ach/2021/11/29/1638176203d94b8f557b41fdc63c60d4007a0373ca.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_ach/2021/11/29/1638176173e16e1d85b99eab6cacb157349498c07f.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_app/2021/08/20/162942280727d86c448d84959d637d6cbaad98986b.webp" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_pi/2021/11/20/163740133793389e174f67e532746c2cd4cf536902_thumbnail_405x552.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_pi/2021/11/03/163592925393829367ca2a872416d8a57e275e4605_thumbnail_405x552.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+        <div class="col-lg-3 cart__product">
+          <span class="hert"><ion-icon name="heart-outline"></ion-icon></span>
+          <span class="cart_buy"><ion-icon name="cart-outline"></ion-icon></span>
+          <div class="cart">
+            <img src="https://img.ltwebstatic.com/images3_pi/2021/11/13/1636781489f92d933696e0d21050dac00172c0b439_thumbnail_405x552.jpg" class="cart__img"alt="">
+          </div>
+          <h6 class="card__title">Thời trang nữ</h6>
+			<p class="card__price">$99</p>
+			<div class="card__action">
+				<button>Buy now</button>
+				<button>Add cart</button>
+			</div>
+        </div>
+      </div>
+    </div>
+    <div class="container container__comment">
+      <h1 class="comment">Khách hàng nói gì về chúng tôi</h1>
+     <div class="customer__comment">  
+       <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/nguoi-mau-01-150x150.png" alt="" class="comment">
+     </div>
+     <span class="comment">The overall use of flatsome is very VERY useful. It lacks very few, if any, things! I loved it and have created my first ever website Punsteronline.com! Best yet, flatsome gets free updates that are great! (and the support is amazing as well!:)</span>
+    </div>
+    <div class="container container__brand">
+      <div class="row">
+        <div class="col-lg-12 brand">
+          <div class="thumbl__logo">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/logo-brian-orlando-six.png" alt="">
+          </div>
+          <div class="thumbl__logo">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/logo-clark-downey.png" alt="">
+          </div>
+          <div class="thumbl__logo">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/logo-frk-island.png" alt="">
+          </div>
+          <div class="thumbl__logo">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/logo-gilbert-stephany.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="container container__footer">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="footer_img">
+            <img src="http://mauweb.monamedia.net/pleatskora/wp-content/uploads/2019/04/logo-pleats-kora-white-02.png" alt="">
+          </div>
+          <p>© 2017 Minera. All Rights Reserved. Designed by Mona Media</p>
+        </div>
+        <div class="col-lg-4 footer__link">
+          <div class="link">
+            <a href="#"> Giới Thiệu</a>
+            <a href="#"> Tin Tức</a>
+            <a href="#"> Store</a>
+            <a href="#"> Liên Hệ</a>
+          </div>
+          <div class="link">
+            <a href="#"> Tài Khoản</a>
+            <a href="#"> Thanh Toán</a>
+            <a href="#"> Kiểm Tra Đơn Hàng</a>
+            <a href="#"> Giỏ Hàng</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <h1>GET 20% OFF COUPON</h1>
+          <span>They are big, bold and beautiful. Billboards have been around for quite a while. In almost all places</span>
+         <div class="login">
+          <input type="text" name="Search" id="Search" placeholder="email">
+          <a href="#" class="login_link">Đăng Kí</a>
+         </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script>
+        $(document).ready(function (){
+                $(window).scroll(function(){
+                    if($(this).scrollTop()){
+                        $('#header__main').addClass('sticky');
+                    }else{
+                        $('#header__main').removeClass('sticky');
+                    }
+                });
+               
+        });
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>
